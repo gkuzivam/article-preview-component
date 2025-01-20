@@ -1,0 +1,143 @@
+body {
+    font-family: 'Manrope';
+    background-color: rgb(239, 239, 239);
+}
+.card-component {
+    display: flex;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.1); /* horizontal offset, vertical offset, blur radius color */
+    margin: 150px 30px 0px 30px; /* top, right, bottom, left */
+    border-radius: 10px;
+    width: 1030px;
+    height: 330px;
+}
+
+.left-card {
+    flex: 0 0 40%; /* flex-grow, flex-shrink, flex-basis */
+}
+
+.left-card img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.right-card {
+    flex: 1 1 0%; 
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+
+.right-card-heading {
+    color: hsl(217, 19%, 35%);
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 60px;
+    margin-bottom: 5px;
+    padding-right: 40px;
+    
+}
+
+.right-card-description {
+    color: hsl(217, 19%, 35%);
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 5px;
+    padding-right: 40px;
+}
+
+.section {
+    display: flex;
+    align-items: center;
+    margin-top: auto;
+    position: relative;
+}
+
+.profile-pic {
+    flex: 0 0 20%;
+}
+
+.profile-pic img {
+    width: 50%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.profile-info {
+    flex: 0 0 60%;
+}
+
+.profile-name {
+    color: rgb(89, 88, 88);
+    margin-bottom: 0px;
+    font-size: 15px;
+}
+
+.profile-date{
+    color: grey;
+    margin-top: 5px;
+    font-size: 13px;
+}
+
+.social-icons {
+    position: absolute;
+    bottom: 70px; /* Position above the share button */
+    left: 85%;
+    transform: translateX(-50%);
+    width: 140px;
+    display: none; /* Initially hidden */
+    background-color: hsl(217, 19%, 35%); /* Optional: Add background color */
+    border-radius: 5px; /* Optional: Add border radius */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
+    padding: 10px;
+    gap: 10px;
+  }
+
+  .social-icons::after {
+    content: '';
+    position: absolute;
+    bottom: -10px; /* Position the triangle below the div */
+    left: 43%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid hsl(217, 19%, 35%);; /* Match the background color of the div */
+  }
+  
+  .social-icons a img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .social-icons span {
+    color: white;
+    letter-spacing: 2px;
+  }
+
+.share-button {
+    flex: 0 0 auto;
+    border: none;
+    color: white;
+    background-color: rgb(239, 239, 239);
+    width: 30px;
+    height: 30px;
+    border-radius: 70%;
+    cursor: pointer;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  padding-top: 10px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
